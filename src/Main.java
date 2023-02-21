@@ -19,13 +19,6 @@ public class Main {
 
         return numberOfDigits;
     }
-    static int sumOfDigits = 0;
-
-    static int calculateSumOfNumber(int n) {
-        if(n == 0)
-            return 0;
-        return n % 10 + calculateSumOfNumber(n/10);
-    }
 
     static int calculateDigitalRoot(int n) {
         if(n == 0)
