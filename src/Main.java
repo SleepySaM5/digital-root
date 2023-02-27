@@ -31,6 +31,14 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(calculateDigitalRoot(5836734));
+        Door numberThreeDoor = new Door(3);
+        Player Junpei = new Player(5);
+        Player June = new Player(6);
+        Player Ace = new Player(1);
+
+        System.out.println(calculateDigitalRoot(Junpei.braceletNumber+June.braceletNumber+Ace.braceletNumber));
+        if(calculateDigitalRoot(Junpei.braceletNumber+June.braceletNumber+Ace.braceletNumber) == numberThreeDoor.doorNumber) {
+            System.out.println("Players can pass through door number " + numberThreeDoor.doorNumber);
+        }
     }
 }
